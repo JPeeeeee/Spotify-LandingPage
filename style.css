@@ -1,0 +1,224 @@
+:root{
+    --default-green: #1db954;
+    --light-green: #1ed760;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/background.jpg);
+    background-color: rgba(0, 0, 0, 0.425);
+    background-blend-mode: color;
+    display: flex;
+    font-family: "Roboto",sans-serif;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+/*navbar*/
+
+#navbar{
+    background: rgba(0, 0, 0, 0.61);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 45px;
+    padding: 0px 230px;
+    position: fixed;
+    z-index: 100;
+}
+
+.logo-img{
+    height: 25px;
+}
+
+.logo-img:hover{
+    cursor: pointer;
+}
+
+#navbar ul{
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.05s ease;
+}
+
+#navbar li:hover{
+    color: var(--light-green);
+    cursor: pointer;
+}
+
+#navbar li:nth-child(3){
+    border-right: 1px solid white;
+    padding-right: 40px;
+}
+
+/*entrance*/
+#entrance{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#entrance h1{
+    font:bolder 80px "Roboto",sans-serif;
+}
+
+#entrance p{
+    font-size: 20px;
+    margin-top: 40px;
+}
+#entrance button{
+    background: var(--default-green);
+    border: none;
+    margin-top: 40px;
+    color: white;
+    padding: 20px 60px;
+    border-radius: 100px;
+    font: bold 15px "roboto",sans-serif;
+    letter-spacing: 1px;
+    transition: all 0.05s ease;
+}
+#entrance button:hover{
+    background: var(--light-green);
+    cursor: pointer;
+}
+/*footer*/
+footer{
+    position: absolute;
+    background: black;
+    width: 100%;
+    top: 120%;
+}
+
+#info-list{
+    display: flex;
+    width: 100%;
+    padding: 50px 230px;
+}
+
+#info-list ul{
+    list-style: none;
+}
+
+#info-list li{
+    transition: all 0.05s ease;
+}
+
+#info-list li:hover{
+    color: var(--light-green);
+    cursor: pointer;
+}
+
+#info-list div#socials{
+    position: absolute;
+    right: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#info-list div#socials #social-item{
+    margin: 20px;
+    font-size: 30px;
+}
+
+#info-list #empresa{
+    margin: 25px;
+    margin-top: 0px;
+    text-align: justify;
+}
+#info-list #empresa li:nth-child(1){
+    color: #919496;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#info-list #empresa li{
+    margin: 10px;
+}
+#info-list #comunidades{
+    margin: 25px;
+    margin-top: 0px;
+    text-align: justify;
+}
+#info-list #comunidades li:nth-child(1){
+    color: #919496;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#info-list #comunidades li{
+    margin: 10px;
+}
+#info-list #links-uteis{
+    margin: 25px;
+    margin-top: 0px;
+    text-align: justify;
+}
+#info-list #links-uteis li:nth-child(1){
+    color: #919496;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#info-list #links-uteis li{
+    margin: 10px;
+}
+div#footers-footer{
+    display: flex;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 15px;
+    margin-left: 180px;
+    font: normal 11px "Roboto", sans-serif;
+    color: #919496;
+}
+#country:hover{
+    color: var(--light-green);
+    cursor: pointer;
+}
+#legal li{
+    display: inline;
+    margin: 10px;
+    transition: all 0.05 ease;
+}
+#brazil{
+    position: absolute;
+    height: 15px;
+    right: 12%;
+    bottom: 15%;
+}
+#legal li:hover{
+    color: var(--light-green);
+    cursor: pointer;
+}
+#country{
+    position: absolute;
+    right: 14%;
+    bottom: 15%;
+    text-align: right;
+    transition: all 0.05s ease;
+}
+#copy{
+    position: absolute;
+    right: 12%;
+    bottom: 10%;
+    text-align: right;
+
+}
+#socials i{
+    transition: all 0.05 ease;
+}
+#socials i:hover{
+    color: var(--light-green);
+    cursor: pointer;
+}
